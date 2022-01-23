@@ -16,6 +16,13 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!--font roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +30,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/extensions.css">
     <link rel="stylesheet" href="./style.css" />
     <title>Personal Blog</title>
   </head>
@@ -32,7 +41,7 @@
       <div class="container">
         <div class="header-flex">
           <div class="logo-image">
-            <img src="./image/arun-light-theme-logo.svg" alt="" />
+            <a href="#"></a>
           </div>
           <nav class="navigation">
             <ul class="navigation-nav__items">
@@ -65,48 +74,17 @@
               </li>
             </ul>
           </nav>
-          <div class="icon-items-wrap flex">
-            <a
-              href="javascript:;"
-              class="nav-icon search-icon flex js-search-button"
-              aria-label="Open search"
-            >
-              <span></span>
+          <div class="header-btns row middle">
+            <a class="search-link row middle" id="searchBtn" href="#">
+                <i class='bx bx-search'></i>
             </a>
-            <a
-              class="nav-icon theme-icon flex js-toggle-dark-light"
-              aria-label="Toggle theme"
-            >
-              <div class="toggle-mode flex">
-                <div class="light"></div>
-                <span class="dark"></span>
-              </div>
-            </a>
+            <button class="mode-link row middle" id="modeBtn" href="#">
+                
+            </button>
           </div>
-          <!-- <div class="darksearch-wrap">
-            <a href="#" class="nav-icon theme-icon" aria-label="open search">
-              <span>
-                <i class="fas fa-search"></i>
-              </span>
-            </a>
-            <a
-              href="#"
-              class="nav-icon nav-icon__second theme-icon"
-              aria-label="toggle theme"
-            >
-              <div class="toggle-mode flex">
-                <div class="light">
-                  <i class="far fa-moon"></i>
-                </div>
-                <span class="dark">
-                  <i class="far fa-sun"></i>
-                </span>
-              </div>
-            </a>
-          </div> -->
         </div>
       </div>
-    </header>
+    </header> 
     <!--header fineshed-->
 
     <!--main started-->
@@ -136,20 +114,21 @@
                     <input
                       data-members-email
                       type="email"
-                      class="main-menu__email form-field input-field"
                       id="header-form-email"
                       placeholder="Your email address"
                       required
                       autocomplete="off"
                     />
+
+                    <!-- class="main-menu__email form-field input-field" -->
                     <button class="btn form-field" type="submit">
                       <span>Subscribe</span>
                     </button>
                   </div>
                 </form>
-                <div class="social-links-wrap flex">
+                <div class="social-links-wrap">
                   <span class="social-links__follow">Follow:</span>
-                  <div class="social-links flex">
+                  <div class="social-links">
                     <a href=""><i class="fab fa-twitter"></i></a>
                     <a href=""><i class="fab fa-facebook-f"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
@@ -161,7 +140,7 @@
             <div class="main-menu__item">
               <div class="cover-img-container">
                 <div class="cover-img-wrap">
-                  <img src="./image/author.jpg" alt="author.jpg" />
+                  <img src="./images/author.jpg" alt="author.jpg" />
                   <div class="dot-parent dot-1">
                     <div class="dot"></div>
                   </div>
@@ -184,7 +163,548 @@
         </div>
       </section>
       <!--main page fineshed-->
+
+      <!--featured posts-->
+      <section class="featuredposts">
+        <div class="featured-container">
+          <div class="featuredposts-title">
+            <h1>Featured posts</h1>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/imagegirl.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a href="">lifestyle</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >Self-observation is the first step of inner unfolding</a
+                  >
+                </h4>
+                <p>
+                  Almost instantly the whole truth of the transaction seemed to
+                  rush upon her mind, and her wrath was inconceivably violent.
+                  She asked me a thousand questions in a...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>May 02, 2021 • 3 min read • Public</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/imagebluegirl.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a href="">health</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >The mind and body are not separate. what affects one,
+                    affects the other
+                  </a>
+                </h4>
+                <p>
+                  Almost instantly the whole truth of the transaction seemed to
+                  rush upon her mind, and her wrath was inconceivably violent.
+                  She asked me a thousand questions in a...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>Mar 28, 2021 • 3 min read • Paid</p>
+              </div>
+            </div>
+          </div>
+          <div class="featuredposts-title">
+            <h1>Latest posts</h1>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/kaizen.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a href="">nature</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >Autumn is a second spring when every leaf is a flower</a
+                  >
+                </h4>
+                <p>
+                  She then expatiated very warmly upon the advantages I should
+                  reap from her plan; talked in a high style of my future
+                  grandeur; assured me how heartily I should...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>May 02, 2021 • 4 min read • Public</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/mirna.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a href="" style="background: #e45c95">health</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >Never let your memories be greater than your dreams
+                  </a>
+                </h4>
+                <p>
+                  Before long the searchlight discovered some distance away a
+                  schooner with all sails set, apparently the same vessel which
+                  had been noticed earlier in the evening. The wind had by this
+                  time backed to the east, and there was a shudder amongst the
+                  watchers on ...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>Mar 28, 2021 • 4 min read • Members</p>
+              </div>
+            </div>
+          </div>
+          <div class="post-card">
+            <div class="post-card-info">
+              <h2>Subscribe to premium membership plan</h2>
+              <p>
+                Get access to all premium content and enjoy reading without any
+                distraction
+              </p>
+              <div class="posd-card-info-link">
+                <a href="#">Compare plan </a>
+              </div>
+            </div>
+            <div class="post-card-abanent">
+              <div class="post-card-abanent-inner">
+                <div class="abanent-inner text-center">
+                  <h3>yearly</h3>
+                  <div class="abanent-inner-price-list">
+                    <span>$</span>
+                    <p>50</p>
+                  </div>
+                  <div class="discount">
+                    <p>save 17%</p>
+                  </div>
+                  <a
+                    href="#"
+                    data-members-plan="yearly"
+                    class="abanent-inner-btn"
+                    >subscribe now
+                  </a>
+                </div>
+              </div>
+              <div class="post-card-abanent-inner">
+                <div class="abanent-inner text-center">
+                  <h3>monthly</h3>
+                  <div class="abanent-inner-price-list">
+                    <span>$</span>
+                    <p>5</p>
+                  </div>
+                  <div style="visibility: hidden" class="discount">
+                    <p>save 17%</p>
+                  </div>
+                  <a
+                    href="#"
+                    data-members-plan="yearly"
+                    class="abanent-inner-btn"
+                    >subscribe now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/kiwi.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a style="background: #bc6de2" href="">food</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >Dramatically improve your cooking using just your
+                    imagination</a
+                  >
+                </h4>
+                <p>
+                  You cannot too assiduously attend to Madame Duval herself; but
+                  I would wish you to mix as little as possible with her
+                  associates, who are not likely to be among those
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>May 02, 2021 • 4 min read • Paid</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/imagegirl.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a href="">lifestyle</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >Self-observation is the first step of inner unfolding
+                  </a>
+                </h4>
+                <p>
+                  Almost instantly the whole truth of the transaction seemed to
+                  rush upon her mind, and her wrath was inconceivably violent.
+                  She asked me a thousand questions in a...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>Mar 28, 2021 • 3 min read • Paid</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/chiroq.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a style="background: #a77622" href="#">nature</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >It is during our darkest moments that we must focus to see
+                    the light
+                  </a>
+                </h4>
+                <p>
+                  She then expatiated very warmly upon the advantages I should
+                  reap from her plan; talked in a high style of my future
+                  grandeur; assured me how heartily I should...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>Apr 24, 2021 • 4 min read • Public</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/window.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a href="" style="background: #e45c95">health</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >Never let your memories be greater than your dreams
+                  </a>
+                </h4>
+                <p>
+                  Before long the searchlight discovered some distance away a
+                  schooner with all sails set, apparently the same vessel which
+                  had been noticed earlier in the evening. The wind had by this
+                  time backed to the east, and there was a shudder amongst the
+                  watchers on ...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>Mar 28, 2021 • 4 min read • Members</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/photoapparat.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a href="" style="background: green">technology</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >Bangladesh has developed plastic alternative using jute
+                  </a>
+                </h4>
+                <p>
+                  Dr. Johnson, as usual, spoke contemptuously of Colley Cibber.
+                  'It is wonderful that a man, who for forty years had lived
+                  with the great and the witty, should have acquired so ill the
+                  talents of conversation: and he had but half to furnish; for
+                  one half of what he said was oaths...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>Aor 28, 2021 • 3 min read • Members</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/window.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a href="" style="background: #bc6de2">food</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >I do not stick to rules when cooking. I rely on my
+                    imagination
+                  </a>
+                </h4>
+                <p>
+                  I walked down to the station with them, and then wandered
+                  through the streets of the little town, finally returning to
+                  the hotel, where I lay upon the sofa and tried to interest
+                  myself in a yellow-backed novel. The puny plot of the story
+                  was so thin, however, when compared to the deep mystery ...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>Mar 28, 2021 • 4 min read • Members</p>
+              </div>
+            </div>
+          </div>
+          <div class="featured-posts__post">
+            <div class="featured-posts__img">
+              <a href="#"
+                ><img src="./images/imagebluegirl.jpg" alt="imagegirl" srcset=""
+              /></a>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__content-star">
+                <a href="" style="background: #3f6dfe">health</a>
+                <i class="bx bxs-star"></i>
+              </div>
+              <div class="featured-posts__content-title">
+                <h4>
+                  <a href="#"
+                    >The mind and body are not separate. what affects one,
+                    affects the other
+                  </a>
+                </h4>
+                <p>
+                  his recital put the Captain into an ecstasy; he went from the
+                  lady to the gentleman, and from the gentleman to the lady, to
+                  enjoy alternately the sight of their distress. He really
+                  shouted with pleasure; and, shaking Monsieur Du Bois
+                  strenuously by the hand ...
+                </p>
+              </div>
+              <div class="featured-posts__content-datarelease">
+                <p>Mar 28, 2021 • 4 min read • Members</p>
+              </div>
+            </div>
+          </div>
+          <div class="showmorebtn">
+            <a class="showmoreposts" href="#">show more posts</a>
+          </div>
+        </div>
+      </section>
+      <section class="reg">
+        <div class="container">
+          <div class="reg-inner flex">
+            <div class="reg-inner-icon">
+              <i class="bx bx-envelope"></i>
+            </div>
+            <h1>Subscribe to newsletter</h1>
+            <h3>
+              Stay up to date! Get all the latest posts delivered straight to
+              your inbox.
+            </h3>
+            <div class="reginputs">
+              <form class="subscribe-form" data-members-form="subscribe">
+                <div class="form-field-flex">
+                  <label for="name" class="only-name">Name</label>
+                  <input
+                    data-members-name
+                    type="text"
+                    class="name form-field"
+                    id="name"
+                    placeholder="Your name"
+                    required
+                    autocomplete="off"
+                    type="text"
+                  />
+                  <label for="name" class="only-name">Email</label>
+                  <input
+                    data-members-name
+                    type="email"
+                    class="name form-field"
+                    id="email"
+                    placeholder="Your email address"
+                    required
+                    autocomplete="off"
+                    type="email"
+                  />
+                  <button class="reginputs-btn" style="submit">
+                    <span>subscribe</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--featured posts-->
     </main>
     <!--main fineshed-->
+    <!--footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-row">
+            <div class="footer-top-logo">
+              <a href="#">
+                
+              </a>
+              <p>
+                An architect, software developer, YouTuber and keynote speaker.
+                On this site I write about my learning and experience.
+              </p>
+            </div>
+            <div class="footer-top-links">
+              <div class="footer-top-link">
+                <div class="top-link-inner">
+                  <h3>features</h3>
+                  <nav>
+                    <ul class="top-link-items">
+                      <li><a href="#">elements</a></li>
+                      <li><a href="#">tags</a></li>
+                      <li><a href="#">authors</a></li>
+                      <li><a href="#">404 page</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="top-link-inner">
+                  <h3>Members</h3>
+                  <nav>
+                    <ul class="top-link-items">
+                      <li><a href="#">membership</a></li>
+                      <li><a href="#">sign in</a></li>
+                      <li><a href="#">sign up</a></li>
+                      <li><a href="#">account</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="top-link-inner">
+                  <h3>About</h3>
+                  <nav>
+                    <ul class="top-link-items">
+                      <li><a href="#">tag page</a></li>
+                      <li><a href="#">aitor page</a></li>
+                      <li><a href="#">contact</a></li>
+                      <li><a href="#">privacy</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-social-links-flex">
+                <span>Follow:</span>
+                <div class="footer-social-links-inner">
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                @2022 <a href="#">Arun Roy</a> - All right Reserved. Published
+                with <a href="#">Ghost </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section id="modalBox" class="modal-box">
+        <button id="closeBtn" class="close-btn">
+            <i class='bx bx-x' ></i>
+        </button>
+        <input type="text" placeholder="Type to search">
+        <p class="modal-text">Press ESC to close.</p>
+        <div class="modal-inner">
+            <h4 class="modal-title">
+                See posts by Popular    
+            </h4>
+            <ul class="modal-list row">
+                <li class="modal-item">
+                    <a href="#" class="modal-link">Inspiration</a>
+                </li>
+                <li class="modal-item">
+                    <a href="#" class="modal-link">Lifestyle</a>
+                </li>
+                <li class="modal-item">
+                    <a href="#" class="modal-link">Nature</a>
+                </li>
+                <li class="modal-item">
+                    <a href="#" class="modal-link">Health</a>
+                </li>
+                <li class="modal-item">
+                    <a href="#" class="modal-link">Travel</a>
+                </li>
+                <li class="modal-item">
+                    <a href="#" class="modal-link">Food</a>
+                </li>
+                <li class="modal-item">
+                    <a href="#" class="modal-link">Technology</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
   </body>
 </html>
