@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--cdnjs file-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--font roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Personal Blog</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-flex">
+          <div class="logo-image">
+            <img src="./image/arun-light-theme-logo.svg" alt="" />
+          </div>
+          <nav class="navigation">
+            <ul class="navigation-nav__items">
+              <li class="navigation-nav__item"><a href="#">home</a></li>
+              <li class="navigation-nav__item"><a href="#">features</a></li>
+              <li class="navigation-nav__item"><a href="#">elements</a></li>
+              <li class="navigation-nav__item"><a href="#">membership</a></li>
+              <li class="navigation-nav__item">
+                <a href="#">more <i class="bx bx-chevron-down"></i></a>
+                <div class="dropbutton-more">
+                  <ul class="dropbtn-more">
+                    <il class="dropbtn-more__item"><a href="#">tags</a></il>
+                    <il class="dropbtn-more__item"><a href="#">authors</a></il>
+                    <il class="dropbtn-more__item"
+                      ><a href="#">monthly archive</a></il
+                    >
+                    <il class="dropbtn-more__item"
+                      ><a href="#">yearly archive</a></il
+                    >
+                    <il class="dropbtn-more__item"><a href="#">contact</a></il>
+                    <il class="dropbtn-more__item"
+                      ><a href="#">get theme</a></il
+                    >
+                  </ul>
+                </div>
+              </li>
+              <li class="navigation-nav__item"><a href="#">sign in</a></li>
+              <li class="navigation-nav__button">
+                <a href="#">sign up</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="icon-items-wrap flex">
+            <a
+              href="javascript:;"
+              class="nav-icon search-icon flex js-search-button"
+              aria-label="Open search"
+            >
+              <span></span>
+            </a>
+            <a
+              class="nav-icon theme-icon flex js-toggle-dark-light"
+              aria-label="Toggle theme"
+            >
+              <div class="toggle-mode flex">
+                <div class="light"></div>
+                <span class="dark"></span>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="darksearch-wrap">
+            <a href="#" class="nav-icon theme-icon" aria-label="open search">
+              <span>
+                <i class="fas fa-search"></i>
+              </span>
+            </a>
+            <a
+              href="#"
+              class="nav-icon nav-icon__second theme-icon"
+              aria-label="toggle theme"
+            >
+              <div class="toggle-mode flex">
+                <div class="light">
+                  <i class="far fa-moon"></i>
+                </div>
+                <span class="dark">
+                  <i class="far fa-sun"></i>
+                </span>
+              </div>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <!--header fineshed-->
+
+    <!--main started-->
+    <main class="main">
+      <!--main page started-->
+      <section class="main-section">
+        <div class="container">
+          <div class="main-menu__flex home-cover-wrap">
+            <div class="main-menu__item">
+              <div class="home-cover">
+                <h1 class="main-menu__title">Hay, I am Arun</h1>
+                <div class="intro-description">
+                  <p>
+                    An architect, software developer, YouTuber and keynote
+                    speaker. On this site I write about my learning and
+                    experience.
+                  </p>
+                </div>
+                <form
+                  class="members-form cover-subscribe-form text-left"
+                  data-members-form="subscribe"
+                >
+                  <div class="form-field-wrap">
+                    <label for="header-form-email" class="sr-online"
+                      >Email</label
+                    >
+                    <input
+                      data-members-email
+                      type="email"
+                      class="main-menu__email form-field input-field"
+                      id="header-form-email"
+                      placeholder="Your email address"
+                      required
+                      autocomplete="off"
+                    />
+                    <button class="btn form-field" type="submit">
+                      <span>Subscribe</span>
+                    </button>
+                  </div>
+                </form>
+                <div class="social-links-wrap flex">
+                  <span class="social-links__follow">Follow:</span>
+                  <div class="social-links flex">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-menu__item">
+              <div class="cover-img-container">
+                <div class="cover-img-wrap">
+                  <img src="./image/author.jpg" alt="author.jpg" />
+                  <div class="dot-parent dot-1">
+                    <div class="dot"></div>
+                  </div>
+                  <div class="dot-parent dot-2">
+                    <div class="dot"></div>
+                  </div>
+                  <div class="dot-parent dot-3">
+                    <div class="dot"></div>
+                  </div>
+                  <div class="dot-parent dot-4">
+                    <div class="dot"></div>
+                  </div>
+                  <div class="dot-parent dot-5">
+                    <div class="dot"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--main page fineshed-->
+    </main>
+    <!--main fineshed-->
+  </body>
+</html>
